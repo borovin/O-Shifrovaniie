@@ -1,4 +1,3 @@
-const hrstart = process.hrtime()
 const fs = require('fs');
 
 const inp = fs.readFileSync('input.txt', 'utf-8').split('\n');
@@ -27,5 +26,3 @@ while (charIndex < string.length) {
 }
 
 console.log(result);
-const hrend = process.hrtime(hrstart);
-console.log(`${hrend[1]/1000000}ms`);
